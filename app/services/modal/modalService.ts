@@ -5,7 +5,7 @@ import {toursDataArray} from "../../index"; // ссылка на массив с
 
 // Определить типы для метода (возвращающие и для переменных в теле функции)
 
-export function openModal(type, i: number) {
+export function openModal(type: string, i: number): void {
 
     const data = toursDataArray[i];
     const tourId = data[i]?.id;
@@ -20,7 +20,7 @@ export function openModal(type, i: number) {
        <p>${data.description}</p>
        
        <div data-tour-id=${tourId} class="ticket-submit">
-       <a href="/ticket.html">Купить билет</a>
+       <a href="./dist/ticket.html">Купить билет</a>
 </div>
      </div>
   `
@@ -30,4 +30,4 @@ export function openModal(type, i: number) {
     }
 }
 
-
+//"/ticket.html"

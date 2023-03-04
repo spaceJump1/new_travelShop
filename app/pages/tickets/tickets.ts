@@ -4,7 +4,7 @@ import '@assets/styles/tickets.scss'
 import {initTicketElementTemplate} from "../../templates/ticketInfo";
 import {IVipTicket, TicketType, ITicket} from "../../models/ticket/ticket";
 import {initFooterTitle, initHeaderTitle} from "@services/general/general";
-import {initTicketInfo, initApp, initPostData, registerConfirmButton, initUserData} from "@services/tickets/ticket";
+import {initApp, registerConfirmButton} from "@services/tickets/ticket";
 
 
 let ticketPostInstance;
